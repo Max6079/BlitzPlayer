@@ -1,26 +1,58 @@
-# 🎬 BlitzPlayer
+# BlitzPlayer 🎬  
 
-BlitzPlayer is a lightweight, modern media player built with **Python (PyQt6 + MPV + yt-dlp)**.  
-It supports playing **local files** and **stream URLs** (YouTube, Twitch, and more).
-
----
-
-## ✨ Features
-- 🎥 Play video and audio files with MPV backend  
-- 🌐 Open and play online stream URLs (YouTube, Twitch, etc.)  
-- ⏮️ Skip Backward / ⏭️ Skip Forward (default 10s)  
-- ▶️ Play / ⏸️ Pause / ⏹️ Stop controls  
-- 📂 File browser for local media  
-- 🕒 Time slider with duration display  
-- 🔊 Volume control  
-- 📑 Simple menu bar (File, Stream, Settings, About)  
-- ⚡ Built-in support for **yt-dlp**  
+BlitzPlayer is a lightweight, modern media player built with **Python (PySide6 + MPV)**.  
+It supports **local video/audio playback** and **stream URLs** (YouTube, online streams, etc.) using **yt-dlp + mpv**.  
 
 ---
 
-## 📦 Installation
+## 🚀 Features
+- 🎥 Play videos and music (MP4, MKV, AVI, MP3, WAV, etc.)  
+- 🌐 Stream online videos via URL  
+- ⏯️ Play / Pause, Stop, Seek, Volume control  
+- ⏩ Skip forward / ⏪ Skip backward buttons  
+- 🔇 Mute toggle  
+- 🖥️ Fullscreen mode (double-click or button)  
+- 📂 Recent files menu  
+- ⚙️ Simple, modern UI with MPV embedded  
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Max6079/BlitzPlayer.git
-   cd BlitzPlayer
+---
+
+## 📦 Installation  
+
+### 1. Clone this repo
+```bash
+git clone https://github.com/Max6079/BlitzPlayer.git
+cd BlitzPlayer
+```
+
+### 2. Install dependencies
+Make sure you have **Python 3.9+** installed, then run:
+```bash
+pip install PySide6 python-mpv yt-dlp
+```
+
+### 3. Install MPV
+You need **MPV player** installed on your system:
+- **Windows**: Download from [mpv.io](https://mpv.io/installation/)  
+- **Linux**:  
+  ```bash
+  sudo apt install mpv
+  ```  
+- **Mac** (Homebrew):  
+  ```bash
+  brew install mpv
+  ```
+
+Ensure `mpv` is in your system PATH.
+
+---
+
+## ▶️ Usage
+Run the player:
+```bash
+python BlitzPlayer.py
+```
+
+- Use **File → Open** to load a local file  
+- Use **Stream URL** to play online videos (requires yt-dlp)  
+- Use toolbar buttons for playback control  
