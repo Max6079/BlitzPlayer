@@ -1,35 +1,44 @@
 # BlitzPlayer
 
-BlitzPlayer is a modern media player built with **Python (PyQt6)** and powered by **MPV** for playback.  
-It features a clean, dark-themed UI with modern controls inspired by Windows 11 and KMPlayer.
-
-## Version
-**1.0**
-
-## Creator
-- **Gaurav Patil**
-
-## Contributors
-- **Dinesh Ade**  
-- **Atharva Raul**
+BlitzPlayer is a lightweight media player built with **Python (PyQt6)** and powered by the **mpv engine**.  
+It features a modern dark UI, supports local file playback, and allows streaming via URL.
 
 ## Features
-- Cross-platform (Windows & Linux)
-- Clean dark UI with vibrant accent colors
-- MPV backend for high-quality media playback
-- Skip forward/backward buttons (configurable, default 10s)
-- Circular, modern playback controls
-- Bundled dependencies for easy setup
+- Play local video & audio files  
+- Stream from online URLs  
+- Skip backward / skip forward controls  
+- Play / Pause button (white themed)  
+- Dark, modern user interface  
+- Menu options: **Open File, Open URL, About, Exit**  
+- Cross-platform support (Windows & Linux when run from source)  
 
-## Installation
-### Windows
-- Download the setup `.exe` and follow the installer.
-- Launch BlitzPlayer from the Start Menu or desktop shortcut.
+## Requirements
+- Python **3.10+**  
+- [mpv player](https://mpv.io/) installed and available in your PATH  
+- Install dependencies:
+  ```bash
+  pip install pyqt6 python-mpv
+  ```
 
-### Linux
-- Download the packaged `.AppImage` or `.deb` file.
-- Make it executable (`chmod +x`) and run it.
+## Running from Source
+This repository contains **only the source code** (no setup files provided).  
 
-## License
-BlitzPlayer is licensed under the **GNU General Public License v2.0 (GPLv2)**.  
-See the [LICENSE](LICENSE) file for details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Max6079/BlitzPlayer.git
+   cd BlitzPlayer
+   ```
+
+2. Run the application:
+   ```bash
+   python blitzplayer.py
+   ```
+
+## Notes
+- No prebuilt setup or executables are included.  
+- If you want to package BlitzPlayer into a standalone app, use tools like **PyInstaller** or **cx_Freeze**.  
+
+## Project Info
+- **Version:** 1.0  
+- **Creator:** Gaurav Patil  
+- **Contributors:** Dinesh Ade, Atharva Raul  
