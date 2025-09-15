@@ -1,58 +1,35 @@
-# BlitzPlayer 🎬  
+# BlitzPlayer
 
-BlitzPlayer is a lightweight, modern media player built with **Python (PySide6 + MPV)**.  
-It supports **local video/audio playback** and **stream URLs** (YouTube, online streams, etc.) using **yt-dlp + mpv**.  
+BlitzPlayer is a modern media player built with **Python (PyQt6)** and powered by **MPV** for playback.  
+It features a clean, dark-themed UI with modern controls inspired by Windows 11 and KMPlayer.
 
----
+## Version
+**1.0**
 
-## 🚀 Features
-- 🎥 Play videos and music (MP4, MKV, AVI, MP3, WAV, etc.)  
-- 🌐 Stream online videos via URL  
-- ⏯️ Play / Pause, Stop, Seek, Volume control  
-- ⏩ Skip forward / ⏪ Skip backward buttons  
-- 🔇 Mute toggle  
-- 🖥️ Fullscreen mode (double-click or button)  
-- 📂 Recent files menu  
-- ⚙️ Simple, modern UI with MPV embedded  
+## Creator
+- **Gaurav Patil**
 
----
+## Contributors
+- **Dinesh Ade**  
+- **Atharva Raul**
 
-## 📦 Installation  
+## Features
+- Cross-platform (Windows & Linux)
+- Clean dark UI with vibrant accent colors
+- MPV backend for high-quality media playback
+- Skip forward/backward buttons (configurable, default 10s)
+- Circular, modern playback controls
+- Bundled dependencies for easy setup
 
-### 1. Clone this repo
-```bash
-git clone https://github.com/Max6079/BlitzPlayer.git
-cd BlitzPlayer
-```
+## Installation
+### Windows
+- Download the setup `.exe` and follow the installer.
+- Launch BlitzPlayer from the Start Menu or desktop shortcut.
 
-### 2. Install dependencies
-Make sure you have **Python 3.9+** installed, then run:
-```bash
-pip install PySide6 python-mpv yt-dlp
-```
+### Linux
+- Download the packaged `.AppImage` or `.deb` file.
+- Make it executable (`chmod +x`) and run it.
 
-### 3. Install MPV
-You need **MPV player** installed on your system:
-- **Windows**: Download from [mpv.io](https://mpv.io/installation/)  
-- **Linux**:  
-  ```bash
-  sudo apt install mpv
-  ```  
-- **Mac** (Homebrew):  
-  ```bash
-  brew install mpv
-  ```
-
-Ensure `mpv` is in your system PATH.
-
----
-
-## ▶️ Usage
-Run the player:
-```bash
-python BlitzPlayer.py
-```
-
-- Use **File → Open** to load a local file  
-- Use **Stream URL** to play online videos (requires yt-dlp)  
-- Use toolbar buttons for playback control  
+## License
+BlitzPlayer is licensed under the **GNU General Public License v2.0 (GPLv2)**.  
+See the [LICENSE](LICENSE) file for details.
